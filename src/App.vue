@@ -18,7 +18,8 @@ function removeCurrentSound(name) {
 
 <template>
   <main class="player">
-    <SoundButton v-for="s in sounds" :key="s.sound" :name="s.name" :sound="s.sound" :icon="s.icon" />
+    <SoundButton v-for="s in sounds" :key="s.sound" :name="s.name" :sound="s.sound" :icon="s.icon"
+    @play="$emit('removeCurrentSound')"/>
   </main>
 
   <p class="now-playing">Now playing: </p>
