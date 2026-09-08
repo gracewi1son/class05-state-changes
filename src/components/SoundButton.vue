@@ -25,7 +25,7 @@ function toggleSound() {
 </script>
 
 <template>
-  <button type="button" class="sound-button" :class="{ playing: isPLaying }" v-on:click="toggleSound">
+  <button type="button" class="sound-button" :class="{ playing: isPlaying }" v-on:click="toggleSound">
     <img v-if="isPlaying" class="status" src="/icons/speaker-active.svg" alt="" width="16" height="16" />
     <img v-else class="status" src="/icons/speaker-mute.svg" alt="" width="16" height="16" />
     <i>
