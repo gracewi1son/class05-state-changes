@@ -61,6 +61,13 @@ function toggleSound() {
   opacity: 0.6;
 }
 
+@media (prefers-color-scheme: dark) {
+  .sound-button .status,
+  .sound-button i img {
+    filter: invert(1);
+  }
+}
+
 .sound-button:hover {
   border-color: var(--color-border-hover);
 }
