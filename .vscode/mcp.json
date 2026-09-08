@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "vue-docs": {
+      "type": "http",
+      "url": "https://mcp.vue-mcp.org/mcp"
+    }
+  }
+}
